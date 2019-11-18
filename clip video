@@ -1,0 +1,6 @@
+
+## CLIP FROM START
+ffmpeg -i C:\temp\mergevideo\X0.mp4 -ss 00:00:00 -to 00:03:00 -c:v copy -c:a copy C:\temp\mergevideo\Final0.mp4
+
+## CLIP MIDDLE SECTION
+ffmpeg -i C:\temp\mergevideo\X1.mp4 -ss 00:10:00 -to 00:15:00 -c:v copy -c:a copy C:\temp\mergevideo\Final1.mp4
