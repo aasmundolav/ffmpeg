@@ -1,0 +1,1 @@
+ffmpeg -i C:\temp\mergevideo\PORT1.mpg -i C:\temp\mergevideo\CENT1.mpg -i C:\temp\mergevideo\STBD1.mpg -filter_complex "[0:v][1:v][2:v]hstack=inputs=3[v]" -map "[v]" -c:v libx264 -crf 23 C:\temp\mergevideo\NewoutputX1.mp4
