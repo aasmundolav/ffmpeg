@@ -3,3 +3,6 @@
 
 
 ffmpeg -i C:\temp\mergevideo\PORT1.mpg -i C:\temp\mergevideo\CENT1.mpg -i C:\temp\mergevideo\STBD1.mpg -filter_complex "[0:v][1:v][2:v]hstack=inputs=3[v]" -map "[v]" -c:v libx264 -crf 23 C:\temp\mergevideo\NewoutputX1.mp4
+
+
+ffmpeg -i C:\temp\As-Laid\EQ19845_20200613072553010@CAM2.mp4 -i C:\temp\As-Laid\EQ19845_20200613072553010@CAM1.mp4 -i C:\temp\As-Laid\EQ19845_20200613072553010@CAM3.mp4 -filter_complex "[0:v][1:v][2:v]hstack=inputs=3[v]" -map "[v]" -c:v libx264 -crf 23 C:\temp\As-Laid\EQ19845_20200613072553010@CAM213.mp4
